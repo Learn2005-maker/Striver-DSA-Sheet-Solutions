@@ -1,4 +1,4 @@
-# 🚀 DSA Mastery: 150+ Problems Solved
+# 🚀 DSA Mastery: 100+ Problems Solved
 
 <div align="center">
 
