@@ -107,28 +107,56 @@ while temp:
     temp=temp.next
 print(None)    
     
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
+# Array
+arr = [9,9,9]
 
+# Convert array to linked list
+head = Node(arr[0])
+temp = head
 
+for i in range(1, len(arr)):
+    new_node = Node(arr[i])
+    temp.next = new_node
+    temp = new_node
+temp=head
+while temp:
+    print(temp.data,end=" -> ")
+    temp=temp.next
+print(None)
 
+print()
+# Using recusive Approach
 
+# iterative approach has time complexity of O(N) and space complexity of O(N) where n is the number of digits in the linked list.
+def helper(temp):
+    if temp==None:
+        return 1
+    carry=helper(temp.next)
+    temp.data=temp.data+carry
+    if temp.data<10:
+        return 0
+    temp.data=0
+    return 1
+        
 
-
-
-
-
-
-
-
+def addOne(head):
+    carry=helper(head)
+    if carry==1:
+        new_head=Node(carry)
+        new_head.next=head
+        return new_head
+    return head    
     
+head=addOne(head)
 
-
-
-
-
-
-
-
-
-
+temp=head
+while temp:
+    print(temp.data,end= " -> ")
+    temp=temp.next
+print(None)    
 
