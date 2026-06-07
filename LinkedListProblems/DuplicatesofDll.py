@@ -58,3 +58,17 @@ head= removeDuplicates(head)
 print_forward(head)
     
 # print(head)
+
+
+# Same logic as remove duplicates from sorted array, we can use two pointers to remove duplicates from sorted linked list
+# nextnode = temp.next
+
+# while nextnode and nextnode.data == temp.data:
+#     nextnode = nextnode.next
+
+# temp.next = nextnode
+
+# if nextnode:
+#     nextnode.prev = temp
+
+# temp = temp.next
