@@ -86,7 +86,7 @@ head=Reversenodes(head,k)
 print_forward(head)
 
 
-
+# Time complecity: O(2n) and Space Complexity: O(1)
 
 
 
