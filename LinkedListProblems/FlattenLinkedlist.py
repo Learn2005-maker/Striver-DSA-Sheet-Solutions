@@ -1,3 +1,16 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.child = None
+head = Node(1)
+head.next = Node(2)
+head.next.next = Node(3)
+head.next.next.next = Node(4)
+head.child = Node(5)  
+head.child.child=Node(7)    
+     
+
 def convertoVertical(arr):
     if len(arr) == 0:
         return None
