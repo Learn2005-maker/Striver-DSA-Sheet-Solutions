@@ -27,4 +27,42 @@ class Solution:
             temp=temp.next 
         return dici[head]
     
+
+# Optimized approach without using extra space
+# time complexity O(3n) and space complexity O(1) without the result linked list space
+
+def copyNodesinBetween(head):
+    temp=head
+    while temp:
+        newnode=Node(temp.val)
+        newnode.next=temp.next
+        temp.next=newnode
+        temp=temp.next.next
+def connectRandompointers(head):
+    temp=head
+    while temp:
+        copynode=temp.next
+        if temp.random:
+            copynode.random=temp.random.next
+        else:
+            copynode.random=None
+        temp=temp.next.next
+        
+def newCopyLinkedList(head):
+    temp=head
+    dummynode=Node(-1)
+    res=dummynode
+    while temp:
+        # copynode=temp.next
+        res.next=temp.next
+        res=res.next
+        temp.next=temp.next.next
+        temp=temp.next
+    return dummynode.next    
+    
+def copyLinkedList(head):
+    copyNodesinBetween(head)
+    connectRandompointers(head)
+    newHead=newCopyLinkedList(head)
+    return newHead
     
