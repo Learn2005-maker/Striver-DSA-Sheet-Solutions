@@ -57,6 +57,7 @@ def insertatPos(head,pos,value):
     return head
 insertatPos(head,3,143)
 print_LL(head)
+
     
 #Deletion 
 def delete_head(head):
@@ -64,6 +65,7 @@ def delete_head(head):
         return None
     head=head.next
     return head
+
 
 def delete_tail(head):
     if head is None or head.next is None:
