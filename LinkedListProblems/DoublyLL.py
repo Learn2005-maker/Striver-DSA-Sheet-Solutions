@@ -174,4 +174,7 @@ head=deleteatPos(head,3)
 print_forward(head)
           
           
+
+
+
         
