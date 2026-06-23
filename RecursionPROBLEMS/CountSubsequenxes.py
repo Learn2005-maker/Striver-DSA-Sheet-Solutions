@@ -47,6 +47,7 @@ print(powerSet)
 
 
 # This is to check if there is a subsequence whose sum is equal to k true or false
+# This technique is for printing one Answer means one subsequence whose sum is equal to k
 def Countsubseqs(nums,st_index,curr_sum,k):
     # global count
     if st_index>=len(nums):  
@@ -60,3 +61,24 @@ nums = [1, 2, 3, 4, 5]
 k = 8
 
 print(Countsubseqs(nums,0,0,k) )
+
+
+
+
+
+# Counting subsequences with is equalto sum ==k
+
+def csubs(i,sublist,csum,nums,k):
+    if i==len(nums):
+        if csum==k:
+            return 1
+        return 0
+    take= csubs(i+1,sublist,csum+i,nums,k)
+    notake=csubs(i+1,sublist,csum,nums,k)
+    
+    return take+notake
+    
+nums=[1,2,1]
+k=2
+print(csubs(0,[],0,nums,k) )
+        
