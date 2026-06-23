@@ -43,3 +43,20 @@ nums = [4, 9, 2, 5, 1]
 Countsubseqs(nums,0,[]) 
 print(count)
 print(powerSet)
+
+
+
+# This is to check if there is a subsequence whose sum is equal to k true or false
+def Countsubseqs(nums,st_index,curr_sum,k):
+    # global count
+    if st_index>=len(nums):  
+        return curr_sum==k
+    if Countsubseqs(nums,st_index+1,curr_sum+nums[st_index],k):
+        return True
+    if Countsubseqs(nums,st_index+1,curr_sum,k):
+        return True
+    return False
+nums = [1, 2, 3, 4, 5]
+k = 8
+
+print(Countsubseqs(nums,0,0,k) )
