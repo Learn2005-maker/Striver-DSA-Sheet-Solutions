@@ -5,7 +5,7 @@
 count=0
 def Countsubseqs(nums,st_index,curr_subset,k):
     global count
-    if st_index>=len(nums):
+    if st_index==len(nums):
         if sum(curr_subset[:])==k:
             count+=1    
         return
