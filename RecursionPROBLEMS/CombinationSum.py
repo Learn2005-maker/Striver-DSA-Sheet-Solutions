@@ -6,11 +6,10 @@ def combinationSum(index,target,arrds,candidates):
         if target==0:
             print(arrds[:])
         return    
-    arrds.append(candidates[index])
     if candidates[index]<=target:
+        arrds.append(candidates[index])
         combinationSum(index,target-candidates[index],arrds,candidates)
-    
-    arrds.pop()
+        arrds.pop()
     combinationSum(index+1,target,arrds,candidates)
     
 
