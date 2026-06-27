@@ -1,4 +1,4 @@
-# time complexity: (9 choose k) * k or O(9 choose k) because we are generating all the combinations of k numbers from 1 to 9 and for each combination we are 
+# Time complexity: (9 choose k) * k or O(9 choose k) because we are generating all the combinations of k numbers from 1 to 9 and for each combination we are 
 # copying the current combination to the answer list.
 def combination3(start,k,n,combo,cursum,ans):
     if len(combo)==k:
