@@ -1,3 +1,5 @@
+
+# letter combinations of phone number
 def letterCombinations(index,digits,phone,s,ans):
     if len(digits)==index:
         ans.append(s[:])
