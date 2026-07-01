@@ -37,3 +37,34 @@ def nQueens(n):
     return ans
 n=4
 print(nQueens(n))
+
+
+
+
+
+# Time complexity: O(N!) 
+def solve(col,board,ans,n, leftRow, upperDiagonal,lowerDiagonal):
+    if col==n:
+        ans.append([''.join(row) for row in board])
+        return
+    for row in range(n):
+        if leftRow[row]==0 and upperDiagonal[row+col]==0 and lowerDiagonal[n-1+col-row]==0:
+            board[row][col]='Q'
+            leftRow[row]=1
+            upperDiagonal[row+col]=1
+            lowerDiagonal[n-1+col-row]=1
+            solve(col+1,board,ans,n,leftRow, upperDiagonal,lowerDiagonal)  # Backtrack
+            board[row][col]='.'
+            leftRow[row]=0
+            upperDiagonal[row+col]=0
+            lowerDiagonal[n-1+col-row]=0
+def nQueens(n):
+    board=[['.' for _ in range(n)]for _ in range(n)]
+    ans=[]
+    leftRow=[0]*n
+    upperDiagonal=[0]*(2*n-1)
+    lowerDiagonal=[0]*(2*n-1)
+    solve(0,board,ans,n, leftRow, upperDiagonal,lowerDiagonal)
+    return ans
+n=4
+print(nQueens(n))
