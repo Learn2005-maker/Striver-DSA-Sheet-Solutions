@@ -5,7 +5,6 @@ def isPalindrome(s,start,end):
         start+=1
         end-=1
     return True        
-
 def palindromepartition(start,path,ans,s):
     if start==len(s):
         ans.append(path[:])
