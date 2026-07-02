@@ -32,10 +32,6 @@ if grid[0][0]==1:
     solve(0,0,grid,n,ans,"",visited)
 print(ans)   
 
-
-
-
-
 # Time complexity: O(4^(n^2))  because in worst case we can go in 4 direction from each cell and there are n^2 cells
 # space complexity: O(n^2)  for visited array and recursion stack space
 def solve(i,j,grid,n,ans,move,visited,di,dj):
