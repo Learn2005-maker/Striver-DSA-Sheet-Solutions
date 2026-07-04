@@ -1,3 +1,4 @@
+       
 def possibleToColor(node,color,edges,colors):
     for u,v in edges:
         if u==node and colors[v]==color:
@@ -5,8 +6,7 @@ def possibleToColor(node,color,edges,colors):
         if v==node and colors[u]==color:
             return False    
     return True    
-        
-
+ 
 def graphColouring(node,n,m,edges,colors):
     # If all nodes are coloured
     if node==n:
@@ -34,3 +34,20 @@ else:
 
 # Time complexity: O(M^N) where M is the number of colors and N is the number of nodes.
 # Space complexity: O(N) for the colors array and recursion stack.
+2
+
+
+# If you want to use adjacency list representation of the graph, 
+# you can modify the code as follows:
+
+
+# graph = {
+#     0: [1,2,3],
+#     1: [0,2],
+#     2: [0,1,3],
+#     3: [0,2]
+# }
+
+# for neighbor in graph[node]:
+#     if colors[neighbor] == color
+#         return False
