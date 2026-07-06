@@ -6,7 +6,7 @@ def possibleToColor(node,color,edges,colors):
         if v==node and colors[u]==color:
             return False    
     return True    
- 
+
 def graphColouring(node,n,m,edges,colors):
     # If all nodes are coloured
     if node==n:
