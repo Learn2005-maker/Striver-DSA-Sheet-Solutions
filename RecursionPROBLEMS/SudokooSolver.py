@@ -34,5 +34,5 @@ print(board)
 for row in board:
     print(row)
     
-# time complexity: O(9^(n*n)) where n is the size of the board (9 in this case). 
+# Time complexity: O(9^(n*n)) where n is the size of the board (9 in this case). 
 # space complexity: O(n*n) for the recursion stack and the board itself.
