@@ -43,7 +43,7 @@ for row in board:
 
 
 class Solution:
-    def solveSudoku(self, board: List[List[str]]) -> None:
+    def solveSudoku( self,board):
 
         rows = [[False] * 10 for _ in range(9)]
         cols = [[False] * 10 for _ in range(9)]
