@@ -9,7 +9,6 @@ def converToBinary(n):
         n=n//2    
     rem=rem[::-1]        
     return rem
-    
 n=13
 res=converToBinary(n)    
 print(res)
@@ -42,9 +41,47 @@ string="1101"
 res=converTodecimal(string)    
 print(res)
     
-    
-    
-    
-            
-                       
-            
+# Swap the numbers... using xor
+
+a,b=5,6
+a=a^b
+b=a^b
+a=a^b
+print(a,b)
+ 
+# checking if ith bit is set or not using XOR left shift
+N=13
+i=1
+# Using xor
+# 1101
+if N&(1<<i)!=0:
+    print(True)
+else:
+    print(False)
+# or using right shift
+N=13
+i=1
+if (N>>i)&1==1:
+    print(True)
+else:
+    print(False)
+
+# Set the ith Bit
+N=13
+i=2
+ans=N | (1<<i)
+print(ans) 
+
+# clear the ith bit
+N=13
+i=2
+
+# 1101 ---> 1001
+print(bin(N & ~(1<<i))[2:])
+
+# Toggle the ith  bit
+N=13
+i=2
+# Toggle (reversing The bit) bits
+
+print(bin(N^(1<<i))[2:])
