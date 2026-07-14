@@ -1,6 +1,6 @@
-n=8
+n = 8
 
-if n&1!=0:
+if (n & 1) == 1:
     print("odd")
 else:
     print("even")
