@@ -85,3 +85,9 @@ i=2
 # Toggle (reversing The bit) bits
 
 print(bin(N^(1<<i))[2:])
+
+# Set rigth most As '0'....
+
+N=13
+
+print(bin(N & (N-1))[2:])
