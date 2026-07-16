@@ -22,9 +22,6 @@ n2=6
 print(gcd(n1,n2))
 
 
-
-
-
 # Ecludian Alogrithm to solve gcd of two numbers
 def gcd(a,b):
     while b:
