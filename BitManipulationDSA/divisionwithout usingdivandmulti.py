@@ -14,4 +14,6 @@ while dividend>=abs(divisor)+total:
 print(count)
 
 # Time complexcity: O(dividend)
+
+# Time complexcity:O(logn )^2
     
