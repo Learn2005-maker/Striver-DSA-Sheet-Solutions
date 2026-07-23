@@ -20,3 +20,32 @@ for i in range(n):
             # count+=1
     ans.append(lis) 
 print(ans)    
+
+def sieve(n):
+    if n<=2:
+        return 0
+    # assume all the numbers are prime
+    prime=[True]*(n)
+    # 0 and 1 are not prime
+    prime[0]=False
+    prime[1]=False
+    i=2 #traverse till sqrt(n)
+    while i*i<=n:
+        # mark all the multiples of i as non-prime
+        if prime[i]:
+            for j in range(i*i,n,i):
+                prime[j]=False
+        i+=1
+    #print all the primes
+    for i in range(2,n):
+        if prime[i]:
+            print(i,end=" , ")
+
+n=2
+sieve(n)
+
+# time complexcity:O(N*log(logn))
+# space complexcity:O(n)
+        
+        
+    
