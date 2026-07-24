@@ -21,6 +21,7 @@ for i in range(n):
     ans.append(lis) 
 print(ans)    
 
+# Sieve erathothams 
 def sieve(n):
     if n<=2:
         return 0
