@@ -61,7 +61,10 @@ class MyQueue:
         return len(self.s1)==0 and len(self.s2)==0
         
     def display(self):
-        print(self.s1[::-1])
+        if self.s1:
+            print(self.s1[::-1])
+        if self.s2:
+            print(self.s2[::-1])
 
 q=MyQueue()
 q.push(10)
