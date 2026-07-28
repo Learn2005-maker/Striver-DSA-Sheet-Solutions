@@ -21,6 +21,31 @@ def isValid(s):
     return len(stack )==0         
             
 s="(){}{{{"            
+print(isValid(s)   )   
+
+
+
+# Time complexcity:O(n)
+# Space complexcity:O(n)
+# Approach: using map 
+def isValid(s):
+    stack=[]
+    mp={
+        ')':'(',
+        ']':'[',
+        '}':'{'
+    }
+    for ch  in s:
+        if ch in '([{':
+            stack.append(ch)
+        else:
+            if not stack and stack[-1]!=mp[ch]:
+                return False
+            stack.pop()
+    return len(stack)==0        
+s="(){}{{{"            
 print(isValid(s)   )        
+        
+             
         
         
