@@ -54,7 +54,7 @@ class MinStack:
         else:
             original = self.mini
             self.mini = 2 * self.mini - x
-            return original
+            return  original
 
     def top(self):
         x = self.stack[-1]
