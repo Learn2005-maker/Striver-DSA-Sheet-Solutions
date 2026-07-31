@@ -31,7 +31,7 @@ def infix_to_postfix(expression):
         # Operator
         else:
             while (stack and stack[-1] != '(' and
-                   precedence(stack[-1]) >= precedence(ch)):
+                   precedence(stack[-1]) >= precedence(ch) and ch!='^'):
                 postfix += stack.pop()
 
             stack.append(ch)
