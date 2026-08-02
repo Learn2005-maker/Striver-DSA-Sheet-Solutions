@@ -36,7 +36,6 @@ print(q.empty())
 
 
 
-
 class MyQueue:
     def __init__(self):
         self.s1=[]
