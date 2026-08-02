@@ -1,8 +1,3 @@
-# stack=[]
-# stack.append([9,9])
-# stack.append([10,5])
-# print(stack[-1][1])
-
 class MinStack():
     def __init__(self):
         self.stack=[]
