@@ -1,4 +1,4 @@
-# Time complecity: push:  O(n). pop,top :O(1) .
+# Time complexity: push:  O(n). pop,top :O(1) .
 class MyQueue:
     def __init__(self):
         self.s1=[]
@@ -77,7 +77,7 @@ q.display()
 print("Top Element",q.peek())
 print(q.empty() )       
             
-# Time complexcity:Push O(1) , pop and top: O(n) not approxmiately O(n)   # 
+# Time complexity:Push O(1) , pop and top: O(n) not approxmiately O(n)   # 
         
         
             
