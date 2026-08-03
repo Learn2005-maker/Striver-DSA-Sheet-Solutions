@@ -3,7 +3,7 @@ def Nge(arr):
     nge=[0]*n
     stack=[]
     for i in range(n-1,-1,-1):
-        while not stack and stack[-1]<=arr[i]:
+        while stack and stack[-1]<=arr[i]:
             stack.pop()
         if len(stack)==0:
             nge[i]=-1
