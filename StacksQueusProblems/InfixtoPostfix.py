@@ -50,7 +50,7 @@ print("Postfix :", infix_to_postfix(exp))
 
 
 # This ensures expressions like A^B^C are converted correctly to:
-# ABC^^
+# ABC
 
 # while (stack and stack[-1] != '(' and
 #        (precedence(stack[-1]) > precedence(ch) or
