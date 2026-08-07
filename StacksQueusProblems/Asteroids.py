@@ -1,4 +1,4 @@
-asteroids=[8,-8]
+asteroids=[5,6,7,9,-3,-12,4,-9,5,9,-4,3]
 n=len(asteroids)
 stack=[]
 for i in range(n):
