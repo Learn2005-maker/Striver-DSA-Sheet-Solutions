@@ -52,3 +52,25 @@ height=[0,1,0,2,1,0,1,3,2,1,2,1]
 
 res=trap(height)
 print(res)
+
+
+# Optimal
+
+height = [4,2,0,3,2,5]
+n=len(height)
+
+l=0
+r=n-1
+l_max=0
+r_max=0
+water=0
+while l<=r:
+    l_max=max(l_max,height[l])
+    r_max=max(r_max,height[r])
+    if l_max<=r_max:
+        water+=l_max-height[l]
+        l+=1   
+    else:
+        water+=r_max-height[r]
+        r-=1
+print(water)    
