@@ -8,4 +8,6 @@ for  i in range(n):
     if stack:
         nge[i]=stack[-1]
     stack.append(nums[i])
-print(nge)    
+print(nge) 
+
+
