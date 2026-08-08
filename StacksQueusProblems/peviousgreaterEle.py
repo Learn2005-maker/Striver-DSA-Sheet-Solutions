@@ -9,5 +9,3 @@ for  i in range(n):
         nge[i]=stack[-1]
     stack.append(nums[i])
 print(nge) 
-
-
