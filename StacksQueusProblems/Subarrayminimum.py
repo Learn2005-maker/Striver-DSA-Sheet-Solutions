@@ -1,5 +1,5 @@
 class Solution:
-    def sumSubarrayMins(self, arr: List[int]) -> int:
+    def sumSubarrayMins(arr) -> int:
         def findNge(arr):
             n=len(arr)
             nge=[0]*n
