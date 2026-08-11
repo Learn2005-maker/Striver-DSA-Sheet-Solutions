@@ -27,7 +27,7 @@ for i in range(len(nums)):
     if dq and dq[0] <= i - k:
         dq.popleft()
 
-    # Remove smaller elements from the back
+    # Remove Smaller elements from the back
     while dq and nums[dq[-1]] <= nums[i]:
         dq.pop()
 
