@@ -28,7 +28,7 @@ else:
     maxArea=0
     # FIX: Use a 1D array to keep track of column heights as we go down row by row
     heights = [0] * m
-    for i in range(n):
+    for i in range(n): 
         for j in range(m):
             if matrix[i][j]=='1':
                 heights[j]+=1
