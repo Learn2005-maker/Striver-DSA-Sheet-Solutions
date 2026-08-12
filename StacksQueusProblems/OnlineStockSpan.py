@@ -1,4 +1,4 @@
-# Brute Force:O(no.ofdays) and s.c:O(total next cells)
+# Brute Force:O(no.ofdays) and S.c:O(total next cells)
 class StockSpanner:
     def __init__(self):
         self.arr=[]
