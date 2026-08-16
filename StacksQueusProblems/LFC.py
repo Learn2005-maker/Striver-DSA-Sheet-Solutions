@@ -151,8 +151,7 @@ class LFUCache:
 
         # New minimum frequency is 1
         self.min_freq = 1
-
-        self.size += 1
+        self.size +=1
 
 
 lfu=LFUCache(3)
@@ -167,7 +166,7 @@ lfu.put(4,100)
 
 
 
-
+# Time complexcity:O(1) and s.c : O (capacity)
 
 
 
