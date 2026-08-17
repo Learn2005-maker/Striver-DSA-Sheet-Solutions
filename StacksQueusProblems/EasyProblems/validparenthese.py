@@ -1,5 +1,5 @@
 # Time complexcity:O(n)
-# spac complexcity:O(n)
+# Space complexcity:O(n)
 # Approach: Store opening brackets in Stack.
 def isValid(s):
     n=len(s)
@@ -20,8 +20,8 @@ def isValid(s):
                 return False
     return len(stack )==0         
             
-s="(){}{{{"            
-print(isValid(s)   )   
+s="(){}{{"            
+print(isValid(s))   
 
 
 
@@ -43,8 +43,8 @@ def isValid(s):
                 return False
             stack.pop()
     return len(stack)==0        
-s="(){}{{{"            
-print(isValid(s)   )        
+s="(){}"            
+print(isValid(s))        
         
              
         
