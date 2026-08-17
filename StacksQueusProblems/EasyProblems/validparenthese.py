@@ -27,7 +27,7 @@ print(isValid(s))
 
 # Time complexcity:O(n)
 # Space complexcity:O(n)
-# Approach: using map 
+# Approach: using Map 
 def isValid(s):
     stack=[]
     mp={
