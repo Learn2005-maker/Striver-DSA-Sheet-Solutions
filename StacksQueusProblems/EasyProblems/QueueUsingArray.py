@@ -8,7 +8,7 @@ class Queue:
         if self.rear==self.size-1:
             print("Queue Overflow")
             return 
-        self.rear+=1
+        self.rear=rear+1 
         self.queue[self.rear]=value
     def dequeue(self):
         if self.front>self.rear:
