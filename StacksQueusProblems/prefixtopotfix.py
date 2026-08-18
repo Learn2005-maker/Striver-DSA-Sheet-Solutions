@@ -12,6 +12,6 @@ def prefix_to_postfix(exp):
     
 exp = "*+AB-CD"
 print(f"Prefix: {exp}")
-print(f"Postfix:  {prefix_to_postfix(exp)}")
-    
-    
+print(f"Postfix:  {prefix_to_postfix(exp)}")   
+
+

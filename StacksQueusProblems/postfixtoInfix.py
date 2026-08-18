@@ -11,7 +11,6 @@ def postfix_to_infix(exp):
             stack.append(convertedstr)
     return stack[-1]        
     
-    
-        
+            
 expression = "AB+C*"
 print(postfix_to_infix(expression))            
