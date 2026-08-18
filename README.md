@@ -51,7 +51,7 @@ Striver-DSA-Sheet-Solutions/
 - [x] Strings
 - [x] Binary Search
 - [x] Linked List
-- [ ] Stack
+- [] Stack
 - [ ] Queue
 - [ ] Recursion
 - [ ] Trees
