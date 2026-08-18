@@ -35,5 +35,17 @@ print(max_len)
 
 
 
+# Optimized ones.
 
+s = "abcabcbb"
+n=len(s)
+dici={}
+left=0
+max_len=0
+for r in range(n):
+    if s[r]  in dici:
+        left=max(left,dici[s[r]]+1)
+    dici[s[r]]=r 
+    max_len=max(max_len,r-left+1)
 
+print(max_len)    
