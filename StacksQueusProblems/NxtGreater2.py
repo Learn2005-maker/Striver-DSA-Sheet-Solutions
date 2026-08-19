@@ -16,9 +16,9 @@ for i in range(n):
 print(nge)
 
 
-# time complexity:O(4n)  we can tell explicitly that the time complexity is O(n) 
-# because each element is pushed and popped from the stack at most once.
-# spac e complexity: O(n)
+# Time complexity:O(4n)  we can tell explicitly that the time complexity is O(n) 
+# Because each element is pushed and popped from the stack at most once.
+# Space complexity: O(n).
 arr=[10,12,-1,11,12]
 n=len(arr)
 nge=[0]*n

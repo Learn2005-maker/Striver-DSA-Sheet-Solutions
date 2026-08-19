@@ -1,5 +1,5 @@
-# step1:find NGE in nums2
-# step2:built the ans from nums1
+# Step1:find NGE in nums2
+# Step2:built the ans from nums1
 # nums2 contains all the numbers.
 # nums1 is a subset of nums2.
 # First, compute the Next Greater Element for every element in nums2.
