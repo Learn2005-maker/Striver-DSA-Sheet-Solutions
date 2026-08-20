@@ -6,8 +6,7 @@ for i in range(n):
     for j in range(i+1,n):
         if nums[j]<nums[i]:
             nge[i]=nums[j]
-            break
-            
+            break      
 print(nge)
 
 # Time complexity O(n)

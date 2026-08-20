@@ -11,8 +11,9 @@ for i in  range(n):
             maxlen=max(maxlen,j-i+1)
         else:
             break    
-print(maxlen)            
-# T.C:O(n^2) and S.c:O(1)
+print(maxlen)    
+        
+# T.C : O(n^2) and S.c : O(1) 
 
 
 nums = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0]
