@@ -5,7 +5,6 @@ def trap(height):
     suffix_max=[0]*n
     prefix_max[0]=height[0]
     for i in range(1,n):
-        
         prefix_max[i]=max(prefix_max[i-1],height[i])
     suffix_max[n-1]=height[n-1]
     for i in range(n-2,-1,-1):
@@ -55,10 +54,8 @@ print(res)
 
 
 # Optimal
-
 height = [4,2,0,3,2,5]
 n=len(height)
-
 l=0
 r=n-1
 l_max=0
