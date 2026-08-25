@@ -51,8 +51,3 @@ h.insert(7)
 print(h.heap)
 print(h.extract_min())
 print(h.heap)
-
-
-
-
- 
