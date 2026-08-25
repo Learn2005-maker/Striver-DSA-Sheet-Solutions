@@ -44,10 +44,13 @@ def celebrity(matrix):
     if top==down:
         if all(matrix[top][i] == 0 and matrix[i][top] == 1 for i in range(n) if i != top):
             return top
-    return -1        
-matrix=[[0,1,1,0],
+    return -1  
+      
+matrix=[
+        [0,1,1,0],
         [0,0,0,0],
         [0,1,0,0],
-        [1,1,0,0]]    
+        [1,1,0,0]
+        ]    
 res=celebrity(matrix)
 print(res) 
