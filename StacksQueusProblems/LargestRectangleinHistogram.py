@@ -38,9 +38,9 @@ print(max_area)
 
 
      
-
+# T.c:O(2n) and S.c:O(n)
 arr= [2,1,5,6,2,3]
-# t.c:O(2n) ans s.c:O(n)
+
 max_area=0
 stack=[]
 n=len(arr)
@@ -59,5 +59,3 @@ while stack:
     pse=stack[-1] if stack else -1 
     max_area=max(max_area,arr[element]*(nse-pse-1))
 print(max_area)
-
-
