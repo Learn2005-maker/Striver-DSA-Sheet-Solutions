@@ -20,4 +20,4 @@ while heap:
 
 
 print(dummy.next)
-
+# T.c:O(nlog k) and S.c is :O(k)
