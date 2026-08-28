@@ -12,7 +12,7 @@ for task,count in freq.items():
     heapq.heappush(heap,(-count,task))
 q=deque()
 
-# (remaining_count,avaliable_time)
+# (Remaining_count,avaliable_time)
 time=0
 while heap or q:
     time+=1

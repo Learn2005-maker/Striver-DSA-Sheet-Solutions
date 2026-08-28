@@ -59,3 +59,4 @@ while stack:
     pse=stack[-1] if stack else -1 
     max_area=max(max_area,arr[element]*(nse-pse-1))
 print(max_area)
+
