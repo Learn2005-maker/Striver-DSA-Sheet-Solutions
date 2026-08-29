@@ -17,7 +17,7 @@ class LRUCache:
     def remove(self, node):
         prevNode = node.prev
         afterNode = node.next
-        prevNode.next = afterNode  # FIXED: prevnode -> prevNode
+        prevNode.next = afterNode  
         afterNode.prev = prevNode
 
     def afterhead(self, node):
