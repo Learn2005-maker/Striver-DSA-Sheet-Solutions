@@ -17,3 +17,4 @@ while len(heap)>1:
 print(total)
 # T.c:O(nlogn)
 # S.c:O(n)
+
