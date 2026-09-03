@@ -26,7 +26,7 @@ else:
     n=len(matrix)
     m=len(matrix[0])
     maxArea=0
-    # FIX: Use a 1D array to keep track of column heights as we go down row by row
+    # FIX: Use a 1D array to keep track of column heights as we go down row by row  .
     heights = [0] * m
     for i in range(n): 
         for j in range(m):

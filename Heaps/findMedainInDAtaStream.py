@@ -1,6 +1,6 @@
 
 
-# T.c: O(nlog n)
+# T.C: O(nlog n)
 import heapq
 
 class MedianFinder:
