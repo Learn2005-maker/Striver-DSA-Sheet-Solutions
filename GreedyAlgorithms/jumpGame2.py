@@ -12,7 +12,7 @@ def jump2(index,jumps):
 nums = [2,3,1,1,4]
 print(jump2(0,0,nums))
 
-# time complexity: O(N^N) and it excecds TLE in leetcode
+# Time complexity: O(N^N) and it excecds TLE in leetcode
 
 
 nums = [2,3,1,4,1,1,1,2]
