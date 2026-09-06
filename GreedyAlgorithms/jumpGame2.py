@@ -17,8 +17,6 @@ print(jump2(0,0,nums))
 
 nums = [2,3,1,4,1,1,1,2]
 n=len(nums)
-
-
 l=0
 r=0
 
@@ -35,7 +33,3 @@ while r<n-1:
     jumps+=1
 
 print(jumps)
-
-
-
-

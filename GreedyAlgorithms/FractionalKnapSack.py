@@ -21,9 +21,4 @@ for i in range(len(items)):
 
 print(totalVal)
 
-# Time complecity: O(n logn)
-
-
-
-
-
+# Time complexity: O(n logn)

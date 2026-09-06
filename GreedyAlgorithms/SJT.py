@@ -10,4 +10,4 @@ for i in range(len(bt)):
 print(wT//len(bt))
 
 
-# time complcity:O(nlogn) and space complexity:O(1)
+# Time complcity:O(nlogn) and space complexity:O(1)
