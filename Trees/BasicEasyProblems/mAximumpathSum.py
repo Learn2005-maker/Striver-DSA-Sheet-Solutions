@@ -1,5 +1,6 @@
+
 class Solution:
-    def maxPathSum( root):
+    def maxPathSum(root):
         maxi=[float("-inf")]
 
         def maxPath(node):
@@ -12,4 +13,3 @@ class Solution:
             return node.val+max(leftSum,rightSum)
         maxPath(root)
         return maxi[0]
-        
