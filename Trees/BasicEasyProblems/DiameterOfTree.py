@@ -2,7 +2,7 @@
 # Time complxity: O (n^2)
 
 class Solution:
-    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+    def diameterOfBinaryTree(self, root) :
         def Height(node):
             if node is None:
                 return 0
@@ -22,7 +22,7 @@ class Solution:
 
 # Optimal Approach
 class Solution:
-    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+    def diameterOfBinaryTree(self, root):
         diameter = [0]
 
         def Height(node):
@@ -38,5 +38,3 @@ class Solution:
 
         Height(root)
         return diameter[0]
-    
-    
