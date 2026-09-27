@@ -1,5 +1,5 @@
 class Solution:
-    def postorder(self, root: 'Node'):
+    def postorder(self, root):
         ans=[]
         if root is None:
             return 

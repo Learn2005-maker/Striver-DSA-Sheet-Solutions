@@ -13,3 +13,4 @@ class Solution:
             return node.val+max(leftSum,rightSum)
         maxPath(root)
         return maxi[0]
+    
