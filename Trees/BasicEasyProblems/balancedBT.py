@@ -4,8 +4,10 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+
 class Solution:
-    def isBalanced(self, root: TreeNode | None) -> bool:
+    def isBalanced(root):
         def dfsHeight(root):
             if root is None:
                 return 0
@@ -20,11 +22,3 @@ class Solution:
             return max(leftH,rightH)+1
 
         return dfsHeight(root)!=-1
-
-
-
-
-      
-      
-      
-        

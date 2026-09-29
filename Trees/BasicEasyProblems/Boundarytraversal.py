@@ -26,7 +26,7 @@ def addLeftboundary(root, res):
 
 
 def addRightboundary(root, res):
-    temp = []
+    temp = [] 
     node = root.right
 
     while node:
