@@ -12,3 +12,5 @@ class Solution:
                 st[-1].right=node
             st.append(node)
         return st[0]
+    
+    

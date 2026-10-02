@@ -16,3 +16,5 @@ class Solution:
                 stack.append([node.left,path+"->"+str(node.left.val)])
         return ans
         
+        
+        
