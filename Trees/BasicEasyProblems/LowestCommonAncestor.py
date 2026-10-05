@@ -57,6 +57,7 @@ while i<len(path1) and i<len(path2) and path1[i]==path2[i]:
 print("Least common Ancestor : ",path1[i-1])
 
 # Time complexity:O(n)
+
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
 
@@ -70,6 +71,9 @@ class Solution:
             return right
         elif right is None:
             return left
-        
         else:
             return root
+        
+        
+        
+        
