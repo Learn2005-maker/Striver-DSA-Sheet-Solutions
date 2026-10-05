@@ -4,7 +4,6 @@ class Solution:
             if root is None:
                 return False
             st=[(root,[root.val])]
-            cur_sum=0
             while st:
                 node,path=st.pop()
                 if not node.left and not node.right:
