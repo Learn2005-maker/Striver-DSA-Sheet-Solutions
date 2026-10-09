@@ -46,7 +46,7 @@ class Solution:
             
 # 3rd Approach
 
-
+# Morre Traversal
 class Solution:
     def flatten(self, root: TreeNode | None) -> None:
         """
