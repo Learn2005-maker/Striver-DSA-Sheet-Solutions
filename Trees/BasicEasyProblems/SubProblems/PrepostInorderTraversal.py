@@ -1,3 +1,13 @@
+class TreeNode:
+    def __init__(self,val):
+        self.val=val
+        self.left=None
+        self.right=None
+
+
+
+
+
 def prepostInOrderTraversal(root):
     pre = []
     In = []
@@ -37,3 +47,15 @@ def prepostInOrderTraversal(root):
             post.append(node.val)
 
     return pre, In, post
+
+
+
+root=TreeNode(1)
+
+root.left=TreeNode(2)
+root.right=TreeNode(3)
+
+root.left.left=TreeNode(8)
+root.right.right=TreeNode(10)
+
+print(prepostInOrderTraversal(root))
