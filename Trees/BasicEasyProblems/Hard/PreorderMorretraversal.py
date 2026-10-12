@@ -20,3 +20,5 @@ class Solution:
                     prev.right==None
                     cur=cur.right
         return preorder
+    
+    
