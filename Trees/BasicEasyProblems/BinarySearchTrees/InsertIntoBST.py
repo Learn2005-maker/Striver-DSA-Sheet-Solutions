@@ -18,3 +18,4 @@ class Solution:
                     break
 
         return root
+# Time complexcity:  O(log n)
