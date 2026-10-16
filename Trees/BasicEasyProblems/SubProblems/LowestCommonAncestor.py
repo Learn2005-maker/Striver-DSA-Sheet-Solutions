@@ -20,7 +20,7 @@ def findPath(root, target):
 
         if node.right:
             st.append((node.right, path + [node.right.val]))
-
+ 
         if node.left:
             st.append((node.left, path + [node.left.val]))
 

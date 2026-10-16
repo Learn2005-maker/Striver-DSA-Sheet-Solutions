@@ -9,3 +9,5 @@ class Solution:
         minRange=float("-inf")
         maxRange=float("inf")
         return isvalid(root,minRange,maxRange)
+    
+    
