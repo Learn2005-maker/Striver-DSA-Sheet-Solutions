@@ -1,4 +1,4 @@
-# bUild bst using preorder traversal.
+# BUild bst using preorder traversal.
 class Solution:
     def bstFromPreorder(self, preorder: list[int]) -> TreeNode | None:
         i=0
@@ -13,3 +13,5 @@ class Solution:
             return root
         int_max=float("inf")
         return buildBST(preorder,int_max)
+    
+    
