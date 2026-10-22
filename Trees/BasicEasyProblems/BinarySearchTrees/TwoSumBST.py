@@ -26,6 +26,12 @@ def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
                 i+=1
         return False
     
+from typing import Optional
+class TreeNode: 
+    def __init__(self, val=0, left=None, right=None): 
+        self.val = val
+        self.left = left
+        self.right = right
 class BSTIterator:
     def __init__(self, root, reverse):
         self.stack = []
@@ -79,3 +85,14 @@ class Solution:
                 j = right.next()
 
         return False
+if __name__ == "__main__":
+    root = TreeNode(7) 
+    root.left = TreeNode(3) 
+    root.right = TreeNode(15) 
+    root.right.left = TreeNode(9) 
+    root.right.right = TreeNode(20) 
+    k = 12 
+    solution = Solution() 
+    result = solution.findTarget(root, k) 
+    print("Target:", k) 
+    print("Pair exists:", result)
