@@ -14,7 +14,7 @@ def bfsofGraph(V,adj):
             if not vis[i]:
                 vis[i]=1
                 q.append(i)
-    return bfs
+    return bfs 
 n=3
 
 # Adjacency list for undirected graph.
