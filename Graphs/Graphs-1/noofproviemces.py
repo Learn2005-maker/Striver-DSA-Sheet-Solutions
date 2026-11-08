@@ -20,7 +20,6 @@ def dfsGraph(V,adj):
 
 
 
-
 isConnected = [[1,1,0],[1,1,0],[0,0,1]]
 v=len(isConnected)
 adjL=[[] for _ in range(v)]
